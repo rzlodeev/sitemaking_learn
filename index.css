@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    --main-font: 'Poppins', monospace;
+    --main-color: black;
+    --add-color: #828282;
+    font-family: var(--main-font);
+    --nav-font-size: 18px;
+    --person-name-font-size: 48;
+    --background-add-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-block {
+    display: flex;
+    padding: 30px 0 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--nav-font-size);
+}
+
+.nav-block a {
+    color: var(--add-color);
+}
+
+.nav-block a:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.nav-block .home-button {
+    color: var(--main-color);
+}
+
+hr {
+    color: var(--add-color);
+}
+
+.person-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--person-name-font-size);
+}
+
+.language {
+    transform: rotate(0.75turn);
+}
+
+.language .ua {
+    color: var(--add-color);
+}
+
+.language .ua:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.language .eng {
+    color: var(--main-color);
+}
+
+.person-photo {
+    width: 100%;
+}
