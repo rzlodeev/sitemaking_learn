@@ -17,6 +17,12 @@ body {
     display: flex;
 }
 
+.map {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .seat, .seat-example {
     padding: 10px;
     margin: 5px;
@@ -26,6 +32,10 @@ body {
 .seat, .seat-example {
     background-color: white;
     transition: 0.1s;
+}
+
+.seat-example {
+    margin: 30px;
 }
 
 .seat:hover, .seat-example:hover {
