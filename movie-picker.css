@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'lato', sans-serif;
+    background-color: rgb(37, 24, 53);
+    color: white;
+    text-align: center;
+}
+
+.seats-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.seat, .seat-example {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.seat, .seat-example {
+    background-color: white;
+    transition: 0.1s;
+}
+
+.seat-example {
+    margin: 30px;
+}
+
+.seat:hover, .seat-example:hover {
+    background-color:rgb(216, 216, 216);
+    transition: 0.1s;
+}
+
+.bought {
+    background-color: rgb(216, 161, 58);
+    transition: 0.1s;
+}
+
+.bought:hover {
+    background-color: rgb(182, 135, 47);
+    transition: 0.1s;
+}
+
+.occupied, .occupied:hover {
+    background-color: rgb(103, 67, 146);
+    transition: 0.1s;
+}
+

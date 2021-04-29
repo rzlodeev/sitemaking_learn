@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-block" id="home">
+        <a href="#home" class="home-button">Головна</a>
+        <a href="#about-me">Про мене</a>
+        <a href="#skills">Навички</a>
+        <a href="#portfolio">Портфоліо</a>
+        <a href="#contacts">Зв'язатись</a>
+      </nav>
+      <a href="#home">
+        <section class="home-fixed">↑</section>
+      </a>
+      <hr />
+      <div class="person-about">
+        <div class="person-name">
+          <h1>Іван<br />Іванів</h1>
+        </div>
+        <div class="person-info">
+          <p>UX / UI дизайнер <br />24 роки, Львів</p>
+        </div>
+        <nav class="language">
+          <a href="#" class="ua">UA</a>
+          <span> | </span>
+          <a href="index.html" class="eng">ENG</a>
+          <style>
+            .language .eng {
+               color: var(--add-color);
+            }
+
+            .language .eng:hover {
+              color: var(--main-color);
+              transition: 0.3s;
+            }
+
+            .language .ua {
+              color: var(--main-color);
+            }
+          </style>
+        </nav>
+      </div>
+      <img class="person-photo" src="img/person-photo.jpg" alt="John Johnson" />
+    </header>
+
+    <main>
+      <div class="about-me" id="about-me">
+        <h2>Про мене</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          porro nesciunt dolore expedita animi accusamus molestias accusantium
+          commodi quae non nostrum, ab et enim eos, doloribus similique quam
+          vero? Praesentium?
+        </p>
+      </div>
+      <div class="skills" id="skills">
+        <h2>Навички</h2>
+        <p class="subheading">Я працюю в наступних програмах:</p>
+        <div class="program-cards">
+          <article class="card">
+            <img src="img/photoshop-icon.png" alt="Photoshop" class="icon" />
+            <p>Adobe<br />Photoshop</p>
+            <img
+              src="img/4-stars.png"
+              alt="Photoshop level 4 out of 5"
+              class="stars"
+            />
+          </article>
+          <article class="card">
+            <img src="img/illustator-icon.png" alt="Illustator" class="icon" />
+            <p>Adobe<br />Illustator</p>
+            <img
+              src="img/3-stars.png"
+              alt="Illustator level 3 out of 5"
+              class="stars"
+            />
+          </article>
+          <article class="card">
+            <img
+              src="img/after-effects-icon.png"
+              alt="After Effects"
+              class="icon"
+            />
+            <p>Adobe<br />After Effects</p>
+            <img
+              src="img/4-stars.png"
+              alt="After Effects level 4 out of 5"
+              class="stars"
+            />
+          </article>
+          <article class="card">
+            <img src="img/figma-icon.png" alt="Figma" class="icon" />
+            <p>Figma</p>
+            <img
+              src="img/4-stars.png"
+              alt="Figma level 4 out of 5"
+              class="stars"
+            />
+          </article>
+        </div>
+      </div>
+      <div class="portfolio" id="portfolio">
+        <h2>Портфоліо</h2>
+        <p class="portfolio-p">Дизайн</p>
+        <div class="carousel">
+          <div class="slides">
+            <div class="item">
+              <img src="img/store.png" alt="Fashion store" />
+              <p class="img-descr">Головна сторінка магазину одягу</p>
+            </div>
+            <div class="item">
+              <img src="img/reebok.png" alt="Reebok store" />
+              <p class="img-descr">Концепт магазину Reebok</p>
+            </div>
+            <div class="item">
+              <img src="img/braun.png" alt="Braun landing page" />
+              <p class="img-descr">Концепт головної сторінки Braun</p>
+            </div>
+          </div>
+        </div>
+        <nav class="slider-btns">
+          <div class="prev-slide"><a>❮</a></div>
+          <div class="next-slide"><a>❯</a></div>
+        </nav>
+        <p class="portfolio-p ">Sites</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contacts" id="contacts">
+        <h2>Зв'язатись</h2>
+        <p>Виникли питання абощо?</p>
+        <a href="#">
+          <section class="button">
+            <p>Надіслати повідомлення</p>
+          </section>
+        </a>
+        <div class="social-media">
+          <a href="https://linkedin.com/"
+            ><img
+              src="img/linkedin-icon.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="https://instagram.com/"
+            ><img
+              src="img/instagram-icon.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="https://behance.net/"
+            ><img src="img/behance-icon.png" alt="Behance" class="social-icon"
+          /></a>
+          <a href="https://dribbble.com/"
+            ><img src="img/dribble-icon.png" alt="Dribble" class="social-icon"
+          /></a>
+        </div>
+        <p class="small-contacts-text">
+          Я на<br />LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="carousel.js"></script>
+</html>
