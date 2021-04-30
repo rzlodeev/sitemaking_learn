@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movie-picker.css">
+    <title>Movie Picker</title>
+</head>
+<body>
+    <h1>Оберіть місця:</h1>
+    <div class="choose-movie">
+        <label>Фільм:</label>
+        <select id="movie-chooser" class="unselectable">
+            <option value="">DA</option>
+        </select>
+    </div>
+    <div class="map">
+        <div class="seat-example occupied"></div>
+        <p>Зайняті</p>
+        <div class="seat-example bought"></div>
+        <p>Вибрані</p>
+        <div class="seat-example"></div>
+        <p>Вільні</p>
+    </div>
+    <div class="screen">
+        <p>Екран</p>
+        <hr>
+    </div>
+    <div class="seats-table">
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <div class="order-text">
+        <p>Ви купили 0 квитків на суму 0 грн</p>
+    </div>
+    <form class="make-order">
+        <input type="text" name="username" class="input-field" placeholder="Name" required>
+        <input type="email" name="useremail" class="input-field" placeholder="E-mail" required>
+        <input type="submit" value='Купити' class='submit-btn'>
+    </form>
+    <script src="choose-film.js"></script>
+</body>
+</html>

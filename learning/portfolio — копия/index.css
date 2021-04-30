@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --main-font: 'Poppins', monospace;
+  font-weight: 700;
+  --main-color: black;
+  --add-color: #828282;
+  font-family: var(--main-font);
+  --nav-font-size: 18px;
+  --person-name-font-size: 48px;
+  --background-add-color: #f6f6f6;
+  --person-about-font-size: 18px;
+  --language-font-size: 16px;
+  --article-font-size: 34px;
+  --p-font-size: 18px;
+  --likeme-font-size: 14px;
+  max-width: 900px;
+  margin: auto;
+}
+
+@media (max-width: 960px) {
+  body {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .movie-image {
+    width: 100% !important;
+  }
+
+  .portfolio .item img {
+    max-height: 300px;
+    width: 100% !important;
+  }
+
+  .person-about {
+    flex-direction: column;
+    align-items: end !important;
+  }
+
+  .person-name h1 {
+    margin: 10px 0 !important;
+  }
+
+  .person-about p {
+    position: unset !important;
+    margin: 10px 0;
+  }
+
+  .language {
+    transform: unset !important;
+    margin: 10px 0;
+  }
+  .nav-block, .nav-line {
+    display: none !important;
+  }
+
+  .about-me {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-block {
+  display: flex;
+  padding: 33px 0 33px 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--nav-font-size);
+}
+
+.nav-block a {
+  color: var(--add-color);
+}
+
+.nav-block a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.nav-block .home-button {
+  color: var(--main-color);
+}
+
+.home-fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.home-fixed:hover {
+  background-color: rgb(206, 206, 206);
+  transition: 0.3s;
+}
+
+hr {
+  color: var(--add-color);
+  margin: 0;
+}
+
+.person-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.person-name h1 {
+  margin: 39.7px 0 39.7px;
+  font-size: var(--person-name-font-size);
+}
+
+.person-about p {
+  position: relative;
+  top: 17px;
+  margin: 0;
+  font-size: var(--person-about-font-size);
+}
+
+.language {
+  transform: rotate(0.75turn);
+  font-size: var(--language-font-size);
+}
+
+.person-photo {
+  width: 100%;
+  margin-bottom: 109px;
+}
+
+.about-me {
+  padding: 107px;
+  background-color: var(--background-add-color);
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: var(--article-font-size);
+}
+
+.about-me p {
+  font-size: var(--p-font-size);
+  font-weight: 500;
+}
+
+.skills {
+  padding: 6px 0 110px 0;
+  text-align: center;
+}
+
+.skills h1 {
+  margin: 0;
+}
+
+.skills .subheading {
+  margin: 30px auto 30px auto;
+  font-weight: 500;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--add-color);
+  font-size: 14px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.icon {
+  height: 89px;
+  width: 89px;
+}
+
+.program-cards p {
+  margin: 112px 0 0 0;
+  position: absolute;
+}
+
+.stars {
+  width: 166px;
+  margin: 91px 20px 0 20px;
+}
+
+.portfolio {
+  background-color: var(--background-add-color);
+  padding: 96px 0 96px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin: 16px;
+  font-size: var(--article-font-size);
+}
+
+.portfolio .portfolio-p {
+  margin: 30px 0 30px 0;
+}
+
+.portfolio .item img {
+  max-height: 300px;
+}
+
+.portfolio .img-descr {
+  font-weight: 500;
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.prev-slide,
+.next-slide {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.prev-slide {
+  border-radius: 15px 0 0 15px;
+}
+
+.prev-slide:hover {
+  background-color: rgb(17, 17, 17);
+  transition: 0.3s;
+}
+
+.next-slide:hover {
+  background-color: rgb(17, 17, 17);
+  transition: 0.3s;
+}
+
+.next-slide {
+  border-radius: 0 15px 15px 0;
+}
+
+.next-slide a, .prev-slide a {
+  user-select: none;
+}
+
+.movie-image {
+  margin: 0 auto 20px auto;
+  display: block;
+  width: 560px;
+}
+
+.portfolio .movie-link {
+  color: black;
+  text-decoration: underline;
+}
+
+footer .contacts {
+  text-align: center;
+}
+
+footer h2 {
+  font-size: var(--article-font-size);
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: var(--p-font-size);
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 180px;
+  height: 42px;
+  border-radius: 21px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.button {
+  background-color: black;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  transition: 0.3s;
+}
+
+.button p {
+  margin: 0;
+  user-select: none;
+}
+
+.social-media {
+  width: 340px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 85px auto 45px auto;
+}
+
+.social-media img {
+  height: 40px;
+}
+
+.small-contacts-text {
+  font-size: var(--likeme-font-size);
+  color: var(--add-color);
+  font-weight: 500;
+}

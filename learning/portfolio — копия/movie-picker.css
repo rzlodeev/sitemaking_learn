@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(37, 24, 53);
+  color: white;
+  text-align: center;
+  width: 350px;
+  margin: auto;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+label {
+  font-size: 14px;
+}
+
+select {
+  border: none;
+  margin: 20px;
+  margin-left: 1px;
+  padding: 0 30px 0 10px;
+  height: 30px;
+  border-radius: 15px;
+  appearance: none;
+  background-image: url('img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: center;
+  background-color: rgb(238, 238, 238);
+  transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+select:focus {
+  appearance: none;
+  border: none;
+}
+
+select:focus {
+  background-color: white;
+  transition: 0.1s;
+}
+
+.seats-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  background-color: rgb(30, 20, 44);
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.seat,
+.seat-example {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 15px 15px 3px 3px;
+}
+
+.seat,
+.seat-example {
+  background-color: white;
+  transition: 0.1s;
+}
+
+.seat-example {
+  margin: 10px;
+}
+
+.seat:hover,
+.seat-example:hover {
+  background-color: rgb(216, 216, 216);
+  transition: 0.1s;
+}
+
+.bought {
+  background-color: rgb(216, 161, 58);
+  transition: 0.1s;
+}
+
+.bought:hover {
+  background-color: rgb(182, 135, 47);
+  transition: 0.1s;
+}
+
+.occupied,
+.occupied:hover {
+  background-color: rgb(103, 67, 146);
+  transition: 0.1s;
+}
+
+.input-field {
+  width: 60%;
+  padding: 7px 0 5px 0;
+  margin-bottom: 7px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input {
+  width: 150px;
+}
+
+
+
+.submit-btn {
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px;
+    border: 2px solid rgb(44, 44, 44);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+  }
