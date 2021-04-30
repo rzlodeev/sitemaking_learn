@@ -29,6 +29,7 @@ function setSeats() {
     for (let i = 0; i < allSeatsList.length; i++) {
       if (occupiedSeats[i]) allSeatsList[i].classList.add('occupied');
       allSeatsList[i].classList.contains('bought') ? userSeats.push(1) : userSeats.push(0);
+      allSeatsList[i].style.transition = '0.3s';
     }
   } else {
     console.error(
@@ -42,7 +43,8 @@ function setSeats() {
 // Реакція на зміну фільму
 movieChooser.addEventListener('change', (event) => {
   selectedMovie = event.target.value;
-  allSeatsList.forEach((Element) => Element.classList.remove('occupied', 'bought'));
+  allSeatsList.forEach((Element) => Element.classList.remove('occupied', 'bought'));  
+  allSeatsList.forEach((Element) => Element.style.transition = "0.3s");  
   ticketsBought = 0;
   userSeats = [];
   setSeats();

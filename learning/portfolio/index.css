@@ -19,6 +19,52 @@ body {
   --article-font-size: 34px;
   --p-font-size: 18px;
   --likeme-font-size: 14px;
+  max-width: 900px;
+  margin: auto;
+}
+
+@media (max-width: 960px) {
+  body {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .movie-image {
+    width: 100% !important;
+  }
+
+  .portfolio .item img {
+    max-height: 300px;
+    width: 100% !important;
+  }
+
+  .person-about {
+    flex-direction: column;
+    align-items: end !important;
+  }
+
+  .person-name h1 {
+    margin: 10px 0 !important;
+  }
+
+  .person-about p {
+    position: unset !important;
+    margin: 10px 0;
+  }
+
+  .language {
+    transform: unset !important;
+    margin: 10px 0;
+  }
+  .nav-block, .nav-line {
+    display: none !important;
+  }
+
+  .about-me {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 a {
@@ -219,6 +265,17 @@ hr {
 
 .next-slide a, .prev-slide a {
   user-select: none;
+}
+
+.movie-image {
+  margin: 0 auto 20px auto;
+  display: block;
+  width: 560px;
+}
+
+.portfolio .movie-link {
+  color: black;
+  text-decoration: underline;
 }
 
 footer .contacts {
